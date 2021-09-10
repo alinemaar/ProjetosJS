@@ -1,0 +1,40 @@
+.buttonRed,
+.buttonYellow,
+.buttonGreen,
+.buttonAuto {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+
+.buttonRed:hover,
+.buttonYellow:hover,
+.buttonGreen:hover,
+.buttonAuto {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.buttonRed {
+    background-image: linear-gradient(to right, #D31027 0%, #EA384D 51%, #D31027 100%)
+}
+
+.buttonYellow {
+    background-image: linear-gradient(to right, #F7971E 0%, #FFD200 51%, #F7971E 100%)
+}
+
+.buttonGreen {
+    background-image: linear-gradient(to right, #56ab2f 0%, #a8e063 51%, #56ab2f 100%)
+}
+
+.buttonAuto {
+    background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD 51%, #4CB8C4 100%)
+}
