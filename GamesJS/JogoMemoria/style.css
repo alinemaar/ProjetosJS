@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background: white;
+    font-family: Abel, Arial, Verdana, sans-serif;
+}
+
+#winCard {
+    position: absolute;
+}
+
+.score {
+    background-image: url(images/naruto_back.png);
+}
+
+#cardboard {
+    width: 640px;
+    height: 540px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.memory-card:active {
+    transform: scale(0.97)
+}
+
+.memory-card {
+    width: calc(20% - 40px);
+    height: 33%;
+    margin: 5px;
+    transform-style: preserve-3d;
+    transition: 0.3s;
+    position: relative;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    background: #FF9C3D;
+    backface-visibility: hidden;
+    padding: 12px;
+    position: absolute;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
